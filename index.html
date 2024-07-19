@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Shimon Schwartz">
+  <meta name="description" content="Shimon Schwartz is a Software Engineer with two decades of experience in the industry.">
+  <title>Shimon Schwartz</title>
+  <link rel="canonical" href="https://www.shimonschwartz.com">
+  <link rel="icon" href="/path/to/favicon.ico">
+  <style>
+    body {
+      align-items: center;
+      background-color: #FFF;
+      color: #222;
+      display: flex;
+
+      /* source: https://modernfontstacks.com/ */
+      font-family: 'Iowan Old Style','Palatino Linotype','URW Palladio L',P052,serif;
+      font-weight: normal;
+
+      font-size: 1.25rem;
+      justify-content: center;
+      line-height: 1.5;
+    }
+    a {
+      color: #0679cc;
+    }
+    #card {
+      max-width: 42rem;
+      margin: auto;
+      padding: 1rem;
+      text-align: center;
+    }
+    #photo {
+      border-radius: 50%;
+      filter: grayscale(90%) brightness(1.3);
+      height: auto;
+      margin: 1rem auto;
+      transition: filter .5s;
+      width: 12.5rem;
+    }
+    #photo:hover {
+      filter: grayscale(0%) brightness(1);
+    }
+    #name, #subtitle {
+      font-size: 2.25rem;
+      font-weight: 200;
+      line-height: 1;
+      margin: 1.5rem auto 0.5rem;
+    }
+    #subtitle {
+      margin: 0.5rem auto 2rem;
+    }
+    #about {
+      display: none;
+    }
+    #about, #links {
+      margin: 0.5rem auto 2rem;
+      text-align: left;
+      hyphens: auto;
+    }
+    #links {
+      list-style: none;
+      text-align: center;
+    }
+
+    @media screen and (min-width: 42rem) {
+      #about {
+        display: block;
+      }
+    }
+    
+    @media screen and (min-width: 48rem) {
+      #name, #subtitle {
+        font-size: 3rem;
+        text-align: left;
+      }
+      #photo {
+        width: 15rem;
+      }
+    }
+  </style>
+</head>
+<body itemtype="https://schema.org/ProfilePage" itemscope>
+  <main id="card" itemprop="mainEntity" itemscope itemtype="https://schema.org/Person">
+    <img src="/assets/original.jpg" srcset="/assets/original-1024.jpg 1024w, /assets/original-512.jpg 512w, /assets/original-128.jpg 128w" id="photo" alt="Shimon Schwartz" width="1030" height="1030" itemprop="image">
+    <h1 id="name">Hi, I am <b itemprop="name">Shimon&nbsp;Schwartz</b>.</h1>
+    <p id="subtitle">Software Engineer, Architect, <br>&amp;&nbsp;Web&nbsp;Performance specialist</p>    
+    <p id="about">
+      I am a full stack <span itemprop="jobTitle">Software Engineer and Architect</span> with two decades of experience
+        in architecting scalable systems, optimizing application performance, and delivering innovative solutions.
+      <br><br>
+      I am passionate about Web Perfomance, complex SQL, and caching.
+    </p>
+    <ul id="links">
+      <li>
+        <a href="mailto:hey@shimonschwartz.com" itemprop="email">hey@shimonschwartz.com</a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/shimonenator" itemprop="url">linkedin.com/in/shimonenator</a>
+      </li>
+    </ul>
+    <link itemprop="sameAs" href="https://www.shimonschwartz.com/" />
+  </main>
+</body>
+</html>
