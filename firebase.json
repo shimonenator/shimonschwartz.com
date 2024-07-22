@@ -8,6 +8,13 @@
           "key" : "Link",
           "value" : "</assets/original-512.avif>; rel=\"preload\"; as=\"image\"; type=\"image/avif\""
         }]
+      },
+      {
+        "source": "/assets/*.@(avif|jpg|png|)",
+        "headers": [{
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, s-maxage=31536000"
+        }]
       }
     ],
     "ignore": [
