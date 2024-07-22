@@ -47,13 +47,15 @@
     }
     #photo {
       border-radius: 50%;
-      filter: grayscale(90%) brightness(1.3);
       height: auto;
       margin: 1rem auto;
       transition: filter .5s;
       width: 12.5rem;
     }
-    #photo:hover {
+    #photo img {
+      filter: grayscale(90%) brightness(1.3);
+    }
+    #photo:hover img {
       filter: grayscale(0%) brightness(1);
     }
     #name, #subtitle {
@@ -98,7 +100,11 @@
 <body itemtype="https://schema.org/ProfilePage" itemscope>
   <main id="card" itemprop="mainEntity" itemscope itemtype="https://schema.org/Person">
     <a href="/assets/original.jpg">
-      <img src="/assets/original-512.jpg" srcset="/assets/original-512.jpg 512w, /assets/original-128.jpg 128w" id="photo" alt="Shimon Schwartz" width="512" height="512" itemprop="image">
+      <picture id="photo">
+        <source srcset="/assets/original-512.avif" type="image/avif">
+        <source srcset="/assets/original-512.jpg 512w" type="image/jpeg">
+        <img src="/assets/original-512.jpg" id="photo" alt="Shimon Schwartz" width="512" height="512" itemprop="image">
+      </picture>
     </a>
     <h1 id="name">Hi, I am <b itemprop="name">Shimon&nbsp;Schwartz</b>.</h1>
     <p id="subtitle">Architect, Software  <br>&amp;&nbsp;Performance Engineer.</p>    

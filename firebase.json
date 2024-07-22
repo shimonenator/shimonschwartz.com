@@ -6,7 +6,7 @@
         "source" : "/",
         "headers" : [{
           "key" : "Link",
-          "value" : "</assets/original-512.png>; rel='preload'; as='image'"
+          "value" : "</assets/original-512.avif>; rel=\"preload\"; as=\"image\"; type=\"image/avif\""
         }]
       }
     ],
