@@ -1,0 +1,20 @@
+{
+  "dir": "ltr",
+  "lang": "en-US",
+  "name": "Shimon Schwartz",
+  "short_name": "Shimon Schwartz",
+  "categories": ["personal", "social", "portfolio", "photo"],
+  "theme_color": "#222222",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "start_url": "/?pwa",
+  "prefer_related_applications": false,
+  "description": "Shimon Schwartz is a Software Engineer and Architect with two decades of experience in the industry",
+    "icons": [
+    { "src": "/assets/original-192.png", "type": "image/png", "sizes": "192x192" },
+    { "src": "/assets/original-512.png", "type": "image/png", "sizes": "512x512" }
+  ],
+  "splash_pages": null
+}
