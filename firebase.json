@@ -1,6 +1,15 @@
 {
   "hosting": {
     "public": "public",
+    "headers": [
+      {
+        "source" : "/",
+        "headers" : [{
+          "key" : "Link",
+          "value" : "</assets/original-512.png>; rel='preload'; as='image'"
+        }]
+      }
+    ],
     "ignore": [
       "firebase.json",
       "**/.*",
